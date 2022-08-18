@@ -1,0 +1,23 @@
+<div class="col-md-7 offset-md-2">
+    <h3>Update Employee</h3>
+    <form #editForm="ngForm" (ngSubmit)="onUpdateEmployee(editForm)">
+    
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" ngModel="{{employee.firstName}}" name="firstName" class="form-control" id="firstName" placeholder="firstName" required>
+        </div>
+        <input type="hidden" ngModel="{{employee.id}}" name="id" class="form-control" id="id" placeholder="Email">
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" ngModel="{{employee.lastName}}" name="lastName" class="form-control" id="lastName" placeholder="lastName" required> 
+        </div>
+        <div class="form-group">
+            <label>Email Id</label>
+            <input type="text" ngModel="{{employee.emailId}}" name="emailId" class="form-control" id="emailId" placeholder="email" required>
+        </div>
+        <div style="margin-top: 10px;">
+        <button class="btn btn-success" id="update-employee-form" type="submit">SUBMIT</button>
+    </div>
+    </form>
+    </div>
+    
